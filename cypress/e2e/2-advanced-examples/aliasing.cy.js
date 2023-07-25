@@ -1,8 +1,10 @@
 /// <reference types="cypress" />
 
+const BASE_URL = 'https://example.cypress.io' // /http://localhost:8080'
+
 context('Aliasing', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:8080/commands/aliasing')
+    cy.visit(BASE_URL + '/commands/aliasing')
   })
 
   it('.as() - alias a DOM element for later use', () => {

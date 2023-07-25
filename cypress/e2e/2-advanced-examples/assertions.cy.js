@@ -1,8 +1,9 @@
 /// <reference types="cypress" />
 
 context('Assertions', () => {
+  const BASE_URL = 'https://example.cypress.io' // /http://localhost:8080'
   beforeEach(() => {
-    cy.visit('http://localhost:8080/commands/assertions')
+    cy.visit(BASE_URL + '/commands/assertions')
   })
 
   describe('Implicit Assertions', () => {

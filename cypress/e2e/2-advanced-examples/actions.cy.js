@@ -1,8 +1,10 @@
 /// <reference types="cypress" />
 
+const BASE_URL = 'https://example.cypress.io' // /http://localhost:8080'
+
 context('Actions', () => {
   beforeEach(() => {
-    cy.visit('http://localhost:8080/commands/actions')
+    cy.visit(BASE_URL + '/commands/actions')
   })
 
   // https://on.cypress.io/interacting-with-elements

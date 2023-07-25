@@ -1,10 +1,12 @@
 /// <reference types="cypress" />
 
+const BASE_URL = 'https://example.cypress.io' // /http://localhost:8080'
+
 context('Cookies', () => {
   beforeEach(() => {
     Cypress.Cookies.debug(true)
 
-    cy.visit('http://localhost:8080/commands/cookies')
+    cy.visit(BASE_URL + '/commands/cookies')
 
     // clear cookies again after visiting to remove
     // any 3rd party cookies picked up such as cloudflare
